@@ -1,0 +1,11 @@
+﻿Abstract Factory is built base on Factory Method pattern, this pattern will create sub-factories which are the sub-classes that implement the highest-level factory actions
+
+This pattern provides an interface or abstract class for the initialization of the objects which have the same characteristics
+
+Advantages:
+* Can ensure that the object created from the factory will be compatible together
+* Follow Single responsiblity principle
+* Follow Open\Close principle
+
+Disadvantages:
+* Complexible code because there are many interface and abstract class is initialized at the same time

@@ -1,0 +1,13 @@
+﻿Factory Method was released with the purpose to encapsulate the object creation in a method, it follows polymorphism.
+
+Factory Method is used in case the logic handle process does not know which type of object will be created. Ex: use in libraries or modules
+
+Advantages:
+* Hide the logic process
+* Easy to expand source code
+* Easy to manage the object creation process, gathering to Factory class
+
+Disadvantages:
+* Complex source code
+* Hard to refactor source code
+* Class cannot implement the inheritance due to this pattern using 'private constructor'

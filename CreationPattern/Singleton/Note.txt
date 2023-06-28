@@ -1,0 +1,23 @@
+﻿Singleton design pattern was released with the purpose to increase management ability, when using this design pattern, 
+only an Instance was created during runtime and can be called everywhere, but it has been broking the Encapsulation principle of OOP.
+
+###Note: Singleton does not provide the ability to create an instance via the 'constructor'. The instance creation is managed in the 'getInstance' static method
+
+This pattern is used in case objects are unauthorized to create many times. Ex: database management
+
+How to use:
+* Provide a 'private constructor'.
+* Create a 'private static' variable to save the created instance, ensure that it is a unique existence and just only created in this class.
+* Create a 'public static method' to get and create an instance. If the instance is 'null', means that it does not exist, create a new one. If instance existed, return itself.
+
+Advantages:
+* Can ensure that a class has only one instance.
+* Provide the ability to access the instance everywhere (global access).
+* Instance is created only once in runtime, when it is called first time.
+* Control the unique instance
+* Reduce the namespaces
+
+Disadvantages:
+* Conflig with Single Resposibility Principle (SOLID)
+* Bad design
+* Hard to Unit test
