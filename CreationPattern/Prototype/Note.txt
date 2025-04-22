@@ -1,0 +1,11 @@
+﻿Prototype pattern allows to create a new object by copying an existing object, known as the prototype.
+It is used when create a new object is time-consuming or expensive, and when the new object is similar to an existing one.
+
+Advantages:
+* Provides a way to create new objects without knowing the details of how they are created.
+* Allows for the creation of complex objects by copying existing ones.
+* Can clone objects with different configurations, making it flexible and reusable.
+
+Disadvantages:
+* Using shallow copy can lead to issues if the object contains references to mutable objects.
+* Can be complex to implement if the object has many dependencies or requires deep copying.

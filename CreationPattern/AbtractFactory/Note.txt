@@ -8,4 +8,4 @@ Advantages:
 * Follow Open\Close principle
 
 Disadvantages:
-* Complexible code because there are many interface and abstract class is initialized at the same time
+* Complexly code because there are many interfaces and abstract classes are initialized at the same time

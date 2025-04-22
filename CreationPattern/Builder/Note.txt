@@ -1,0 +1,13 @@
+﻿Builder pattern provides a way to construct a complex object step by step. 
+It is used when the construction process of an object is complex and requires multiple steps or configurations. 
+The Builder pattern allows for the creation of different representations of an object using the same construction process.
+It separates the construction of a complex object from its representation, allowing for more flexibility and reusability in the code.
+
+Advantages:
+* Provides a clear separation between the construction and representation of an object.
+* Brings flexibility in the construction process, allowing for different representations of the same object.
+* Makes the code more readable and maintainable by using a fluent interface.
+
+Disadvantages:
+* Can lead to a more complex code structure with multiple classes.
+* Needs to be handle carefully to avoid null references or incomplete objects.

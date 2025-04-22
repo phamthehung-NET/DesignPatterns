@@ -1,0 +1,13 @@
+﻿Adapter pattern provides the methods to convert from one interface to another interface to help them work together.
+Adapter plays an intermediary role between 2 classes convert interface of one or many existed classes to other interface for new requirements.
+It accepts the different interfaces can work together easier via intermediary interface, don't need to change the codes of current interface.
+This pattern also called Wrapper pattern due to it provides a 'wrapper interface' for the current system which has the suitable data and behaviors but not compatible with the new classes
+
+When use: when extend source code for new requirements but dont want to change the current resources. Ex: Integrate a third-party for current project, need to change data type from current to something suitable for library.
+
+Advantages:
+* Follow Open-close principle (SOLID)
+* Follow Single Responsibility principle (SOLID)
+
+Disadvantages:
+* Elaborately source code

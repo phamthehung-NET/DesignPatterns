@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.CreationPattern.FactoryMethod
 {
-    public interface IPerson
+    public class TeacherFactory : PersonFactory
     {
-        public string GetPerson();
-    }
-
-    public enum PersonType
-    {
-        Teacher,
-        Student,
-        Engineer
+        public override IPerson CreatePerson()
+        {
+            return new Teacher();
+        }
     }
 }

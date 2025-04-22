@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.CreationPattern.Singleton
 {
-    internal class Table
+    public class Table
     {
         public string Name { get; }
 
