@@ -1,4 +1,36 @@
-﻿Abstract Factory is built base on Factory Method pattern, this pattern will create sub-factories which are the sub-classes that implement the highest-level factory actions
+﻿╔══════════════════════╗                                                                            ╔══════════════════════╗
+║ <<interface>>        ║                                                                            ║ <<interface>>        ║              ╔══════════════════════╗
+║  AbstractFactory     ║───────────────────────┐                                                    ║     GUIFactory       ║────────────▶ ║     Button           ║
+║ +CreateProductA()    ║                       │                                                    ╚══════════════════════╝              ╚══════════════════════╝
+║ +CreateProductB()    ║                       │                                                                ▲                                      ▲
+╚══════════════════════╝                       │                                                                │                                      │
+        ▲                                      │                                                    ╔══════════════════════╗              ╔══════════════════════╗
+        │                                      ▼                                                    ║     MacFactory       ║              ║      MacButton       ║
+╔══════════════════════╗              ╔══════════════════════╗                                      ║ +CreateButton()      ║              ║ +Render()            ║
+║  ConcreteFactory1    ║              ║  ConcreteFactory2    ║                                      ╚══════════════════════╝              ╚══════════════════════╝
+║ +CreateProductA()    ║              ║ +CreateProductA()    ║
+║ +CreateProductB()    ║              ║ +CreateProductB()    ║
+╚══════════════════════╝              ╚══════════════════════╝
+                                    
+        │                                      │                                 
+        ▼                                      ▼            
+
+╔══════════════════════╗              ╔══════════════════════╗
+║ <<interface>>        ║              ║ <<interface>>        ║
+║  AbstractProductA    ║              ║  AbstractProductB    ║
+╚══════════════════════╝              ╚══════════════════════╝
+        ▲                                      ▲
+        │                                      │
+╔══════════════════════╗              ╔══════════════════════╗
+║  ConcreteProductA1   ║              ║  ConcreteProductB1   ║
+╚══════════════════════╝              ╚══════════════════════╝
+
+╔══════════════════════╗              ╔══════════════════════╗
+║  ConcreteProductA2   ║              ║  ConcreteProductB2   ║
+╚══════════════════════╝              ╚══════════════════════╝
+
+
+Abstract Factory is built base on Factory Method pattern, this pattern will create sub-factories which are the sub-classes that implement the highest-level factory actions
 
 This pattern provides an interface or abstract class for the initialization of the objects which have the same characteristics
 

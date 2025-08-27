@@ -1,4 +1,21 @@
-﻿Bridge is used to split the dependencies between abstraction and implementation to 2 specific parts for easier expansion.
+﻿            Abstraction -------> Implementation                     
+                    |                         |
+            RefinedAbstraction     ConcreteImplementationA/B
+
+            Abstraction (Device)
+                ▲
+                |
+            RefinedAbstraction (Android, iOS)
+                |
+                | uses
+                ▼
+            Implementor (Brand)
+                ▲
+                |
+            ConcreteImplementor (Samsung, iPhone)
+
+
+Bridge is used to split the dependencies between abstraction and implementation to 2 specific parts for easier expansion.
 
 Advantages:
 * Can create a independent platform classes and apps.

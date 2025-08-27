@@ -1,0 +1,44 @@
+﻿                                                                                +----------------------+
+                                                                                |   Flyweight (IShape) |
+                                                                                +----------------------+
+                                                                                | +Operation()         |
+                                                                                +----------------------+
+                                                                                           ▲
+                                                                                           |
+                                                                             ---------------------------
+                                                                             |                          |
+                                                                    +------------------+   +----------------------------+
+                                                                    | ConcreteFlyweight|   |  UnsharedConcreteFW        |
+                                                                    |  (Circle)        |   |  (if has non-shared state) |
+                                                                    +------------------+   +----------------------------+
+                                                                    | - intrinsicState |   | - allState                 |
+                                                                    | +Operation()     |   | +Operation()               |
+                                                                    +------------------+   +----------------------------+
+
+                                                                            +--------------------------+
+                                                                            |  FlyweightFactory        |
+                                                                            +--------------------------+
+                                                                            | - flyweights: Dictionary |
+                                                                            | +GetFlyweight(key)       |
+                                                                            +--------------------------+
+                                                                                        ▲
+                                                                                        |
+                                                                                +-------------------+
+                                                                                |     Client        |
+                                                                                +-------------------+
+                                                                                | - uses factory    |
+                                                                                | - calls operation |
+                                                                                +-------------------+
+
+The Flyweight Pattern is a structural design pattern that allows for the sharing of objects to support a large number of similar objects efficiently.
+It is particularly useful when dealing with a large number of objects that have similar characteristics, allowing for memory savings and performance improvements.
+
+Advantages:
+* Reduces memory usage by sharing common parts of objects.
+* Improves performance by reducing the number of objects created.
+* Allows for the creation of a large number of similar objects without significant overhead.
+
+Disadvantages:
+* Increases complexity by requiring a factory to manage the shared objects.
+* Can lead to difficulties in managing state, especially if objects have both shared and unshared state.
+* May require additional effort to implement and maintain the factory and shared objects.

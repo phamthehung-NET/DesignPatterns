@@ -1,4 +1,26 @@
-﻿Factory Method was released with the purpose to encapsulate the object creation in a method, it follows polymorphism.
+﻿                                                        <<interface>>
+                                                        Product
+                                                            ▲
+                                                            |
+                                                +----------------------+         +---------------------+
+                                                |   ConcreteProductA   |         |  ConcreteProductB   |
+                                                +----------------------+         +---------------------+
+                                                            ▲
+                                                            |
+                                                    +-------------------+
+                                                    | Creator           |
+                                                    |-------------------|
+                                                    | + FactoryMethod() |
+                                                    +-------------------+
+                                                            ▲
+                                                            |
+                                                 +----------------------+
+                                                 | ConcreteCreatorA     |
+                                                 +----------------------+
+                                                 | + FactoryMethod()    |
+                                                 +----------------------+
+
+Factory Method was released with the purpose to encapsulate the object creation in a method, it follows polymorphism.
 
 Factory Method is used in case the logic handle process does not know which type of object will be created. Ex: use in libraries or modules
 

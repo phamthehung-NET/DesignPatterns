@@ -1,4 +1,15 @@
-﻿Prototype pattern allows to create a new object by copying an existing object, known as the prototype.
+﻿                                                            +---------------+
+                                                            |   Prototype   |
+                                                            +---------------+
+                                                            | + Clone()     |
+                                                            +---------------+
+                                                                  ▲
+                                                                  |
+                                                       +------------------------+
+                                                       | ConcretePrototypeA     |
+                                                       +------------------------+
+
+Prototype pattern allows to create a new object by copying an existing object, known as the prototype.
 It is used when create a new object is time-consuming or expensive, and when the new object is similar to an existing one.
 
 Advantages:

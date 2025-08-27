@@ -34,6 +34,30 @@ namespace DesignPatterns.CreationPattern.Builder
             return this;
         }
 
+        public ComputerBuilder AddPSU(string psu)
+        {
+            _computer.PSU = psu;
+            return this;
+        }
+
+        public ComputerBuilder AddMotherBoard(string motherboard)
+        {
+            _computer.Motherboard = motherboard;
+            return this;
+        }
+
+        public ComputerBuilder AddCooler(string cooler)
+        {
+            _computer.Cooler = cooler;
+            return this;
+        }
+
+        public ComputerBuilder AddCase(string pcCase)
+        {
+            _computer.Case = pcCase;
+            return this;
+        }
+
         public Computer Build()
         {
             return _computer;

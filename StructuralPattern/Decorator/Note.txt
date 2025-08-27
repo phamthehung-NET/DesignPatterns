@@ -1,0 +1,36 @@
+﻿                                                                   +------------------+
+                                                                   |    Component     |<----------------+
+                                                                   +------------------+                 |
+                                                                   | +Operation()     |                 |
+                                                                   +------------------+                 |
+                                                                             ▲                          |
+                                                                 ┌───────────┴─────────────┐            |
+                                                                 |                         |            |
+                                                            +------------+        +----------------+    |
+                                                            |  Concrete  |        |   Decorator    |----+
+                                                            | Component  |        +----------------+
+                                                            +------------+        | -component     |
+                                                                                  | +Operation()   |
+                                                                                  +----------------+
+                                                                                            ▲
+                                                                            ┌──────────────┴─────────────┐
+                                                                            |                            |
+                                                                    +----------------+         +--------------------+
+                                                                    | BorderDecorator|         | ScrollDecorator    |
+                                                                    +----------------+         +--------------------+
+                                                                    | +Operation()   |         | +Operation()       |
+                                                                    +----------------+         +--------------------+
+
+Decorator Pattern is a structural design pattern that allows you to add new functionality to an object dynamically without altering its structure.
+It is used to extend the behavior of individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class.
+The Decorator pattern is typically used to add responsibilities to individual objects, rather than to entire classes.
+
+Advantages:
+* Provides a flexible alternative to subclassing for extending functionality.
+* Allows for the addition of responsibilities to individual objects at runtime.
+* Supports recursive composition, allowing for complex behaviors to be built up from simple components.
+
+Disadvantages:
+* Can lead to a large number of small classes, which can make the codebase harder to understand.
+* Can make the code more complex, as it introduces additional layers of abstraction.
+* May lead to issues with the order of decorators, as the order in which decorators are applied can affect the final behavior.

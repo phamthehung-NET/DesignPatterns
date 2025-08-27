@@ -1,0 +1,30 @@
+﻿                                                            ┌────────────────────┐
+                                                            │     Facade         │───────┐
+                                                            │ + Operation()      │       │
+                                                            └────────────────────┘       │
+                                                                    ▲                    │
+                                                                    │                    ▼
+                                                                ┌───────┐    ┌────────┐ ┌─────────┐
+                                                                │ Sub1  │    │ Sub2   │ │  Sub3   │
+                                                                └───────┘    └────────┘ └─────────┘
+or:
+                                                                Client ─────► Facade ─────► SubsystemA
+                                                                                 │
+                                                                                 └────────► SubsystemB
+                                                                                 │
+                                                                                 └────────► SubsystemC
+
+Facade Pattern is a structural design pattern that provides a simplified interface to a complex subsystem.
+It defines a higher-level interface that makes the subsystem easier to use, hiding its complexities from the client code.
+The Facade pattern is used to provide a unified interface to a set of interfaces in a subsystem, making it easier to use and understand.
+
+Advantages:
+* Simplifies the interface to a complex subsystem, making it easier to use.
+* Reduces dependencies on the subsystem, allowing for easier maintenance and changes.
+* Provides a single point of access to the subsystem, making it easier to manage and use.
+* Can help to decouple the client code from the subsystem, allowing for more flexibility in the design.
+
+Disadvantages:
+* Can lead to a loss of flexibility, as the facade may not expose all the functionality of the subsystem.
+* May hide important details of the subsystem, making it harder to understand how it works.
+* Can create a single point of failure, as the facade becomes a critical part of the system.

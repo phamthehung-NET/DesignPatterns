@@ -1,0 +1,24 @@
+﻿                                                                ┌────────────────┐
+                                                                │  IComponent    │◄────────────┐
+                                                                │ + Operation()  │             │
+                                                                └────────────────┘             │
+                                                                ▲              ▲               │
+                                                           ┌────────┐     ┌────────────┐       │
+                                                           │  Leaf  │     │ Composite  │───────┘
+                                                           └────────┘     └────────────┘
+                                                                                ▲
+                                                                       ┌────────┴────────┐
+                                                                       │ List<Component> │
+                                                                       └─────────────────┘
+
+Composite Pattern is a structural design pattern that allows you to compose objects into tree structures to represent part-whole hierarchies.
+It allows clients to treat individual objects (leaf) and groups of objects (composite) uniformly, via a common interface.
+
+Advantages:
+* Simplifies client code. The client can treat individual objects and compositions uniformly, which simplifies the code that uses them.
+* Makes it easier to add new kinds of components. You can add new leaf or composite classes without changing existing code.
+* Supports recursive structures. The pattern allows you to create complex tree structures that can be traversed recursively.
+
+Disadvantages:
+* Can make the design more complex. The pattern introduces additional classes and interfaces, which can make the design more complex.
+* May lead to performance issues. If the tree structure becomes too deep or too wide, it can lead to performance issues when traversing or manipulating the structure.
